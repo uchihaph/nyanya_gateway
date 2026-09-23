@@ -825,7 +825,7 @@ async function main() {
 
     const body = readBody(protocol.buildGroupMessagePayload({
       groupId: 689546479,
-      senderUin: 2679375266,
+      senderUin: 10001,
       displayName: 'Alice',
       text: '[图片]',
       images: [mediaId],

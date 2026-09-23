@@ -65,7 +65,7 @@ function createQzoneBridge(options) {
     });
   }
 
-  // 拿当前登录号（selfId）。/status 返回 { ok, qq: "2948126361", ... }，缓存一次。
+  // 拿当前登录号（selfId）。/status 返回 { ok, qq: "<你的QQ号>", ... }，缓存一次。
   async function getSelfId() {
     if (cachedSelfId) return cachedSelfId;
     const resp = await call('/status', {});
